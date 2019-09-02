@@ -1,0 +1,113 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>MyFirstLayout</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+  <script src="index.js"></script>
+  <!-- Header -->
+  <div class="header col-12">
+      
+          <button class="primary-nav"><strong>ABOUT ME</strong></button>
+          <button class="primary-nav"><strong>MY BLOG</strong></button>
+          <img class="my-pic" src="image/lusi-fan.png" width="150px">
+          <button class="primary-nav" id="menu" onlick="expand()"><strong>PORTFOLIO</strong></button>
+          <button  class="primary-nav" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><strong>CONTACT ME</strong></button>
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                            </div>
+                            <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                                <label for="recipient-name" class="control-label">Recipient:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                                <label for="message-text" class="control-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                            </div>
+                            <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+     
+        
+  </div>
+
+  <!-- Cards & Animation -->
+  <div class="animation">
+      <div class="row" id="portfolio">
+            <!-- Card 1 -->
+                    <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+                        <div class="card">
+                        <img src="image/swimming-pool.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fine Arts</h5>
+                            <button id="view-gallery" href="#">View Gallery</button>
+                      </div>
+                    </div>
+                  </div>
+            <!-- Card 2 -->
+                <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+                    <div class="card">
+                      <img src="image/gargoyle.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">Illustration</h5>
+                           <button id="view-gallery" href="#">View Gallery</button>
+                        </div>
+                  </div>
+                </div>
+             <!-- Card 3 -->
+                    <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+                        <div class="card">
+                          <img src="image/dream-86.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h5 class="card-title">Graphic Design</h5>
+                               <button id="view-gallery" href="#">View Gallery</button>
+                            </div>
+                      </div>
+                    </div>
+
+             <!-- Card 4 -->
+                <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
+                    <div class="card">
+                      <img src="image/fresh.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h5 class="card-title">UI/UX Design</h5>
+                           <button id="view-gallery" href="#">View Gallery</button>
+                        </div>
+                  </div>
+                </div>
+            
+      </div>
+
+      <!-- Cable Car Animation -->
+      <img class="cable-car" src="image/cable-car.png" width="10%">
+  </div>
+
+  
+      
+ 
+
+  
+
+ 
+
+  </body>
+</html>
