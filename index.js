@@ -4,7 +4,7 @@
 // }
 
 // $("#menu").on("click", function(){
-//     $('#portfolio').css("display","none");
+//     $('#view-gallery').css("display","flex");
 //   });
 
 $('#exampleModal').on('show.bs.modal', function (event) {
